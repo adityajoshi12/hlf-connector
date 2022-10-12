@@ -60,7 +60,7 @@ jobs:
         env:
           type: "${{ github.event.inputs.releaseType }}"
       - name: Create Pull Request with new PRs
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
           branch-suffix: timestamp
